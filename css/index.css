@@ -1,0 +1,114 @@
+body {
+  background-color: white;
+  font-family: Verdana, sans-serif;
+  font-size: 13px;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  background-color: #055b40;
+  margin: 0;
+  padding: 20px;
+  color: white;
+}
+
+fieldset {
+  margin: 20px;
+  padding: 20px;
+  border: 2px dashed #DDDDDD;
+}
+
+legend {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+form span {
+  color: #42579C;
+  border: 1px solid #6278B0;
+  padding: 20px 40px;
+  display: block;
+  background: url('./../img/info.png') no-repeat;
+  background-size: 30px;
+  background-position: center left;
+}
+
+.formElement {
+  padding: 5px 10px; /*# Top-Bottom, #LeftRight */
+  width: 300px;
+
+}
+
+#countrySelect{
+  width: 250px;
+}
+
+.button{
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  margin-right: 20px;
+  border: 0px;
+  border-radius: 10px;
+}
+
+.button:hover{
+  cursor: pointer; /*Property of the mouse that is displayed */
+  opacity: 0.85;
+}
+
+/* The rule in the bottom wins, as priority */
+
+#submitButton{
+  background-color: #56C56F;
+}
+
+/*
+#submitButton:hover{
+  background-color: #68c97e;
+  opacity: 0.85;
+}
+*/
+
+#cancelButton{
+  background-color: #D9534F;
+}
+
+/*
+#cancelButton:hover{
+  background-color: #d46d6a;
+  opacity: 0.85;
+}
+*/
+
+.menu{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  background-color: #CCC;
+  overflow: hidden; /*Dont forget about the things floating, they exist m8, pls */
+}
+
+.menu > li{
+  float: left;
+  padding: 20px;
+}
+
+.menu > li:hover, .selected{
+  cursor: pointer;
+  color: white;
+  background-color: #999;
+}
+
+.inputContainer{
+  height: 55px;
+}
+
+.errorDisplay{
+  font-weight: bold;
+  font-size: 20px;
+  color: red;
+}

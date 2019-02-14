@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> The form for practica </title>
+  <link href="./css/index.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+  <header>
+    <h1> Registry Form </h1>
+
+    <nav>
+      <ul class="menu">
+        <li> Home </li>
+        <li> About the site </li>
+        <li class="selected"> Registry </li>
+        <li> Contact </li>
+        <li> Copyright </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form id="Form1">
+      <fieldset>
+        <legend>
+          New account registry
+        </legend>
+        <span> Your information is safe with us </span>
+
+        <div class="inputContainer">
+          <label for="fullName">
+            <div class="name">
+              Complete name:
+            </div>
+            <input type="text" id="fullName" class="formElement" />
+          </label>
+        </div>
+
+        <div class="inputContainer">
+          <label for="emailInput">
+            <div class="email">
+              Email:
+            </div>
+            <input type="text" id="emailInput" class="formElement" />
+          </label>
+        </div>
+
+        <div class="inputContainer">
+          <label for="passwordInput">
+            <div class="pass">
+              Password:
+            </div>
+            <input type="password" id="passwordInput" class="formElement" />
+          </label>
+        </div>
+
+        <div class="inputContainer">
+          <label for="passwordConfirmInput">
+            <div class="passConfirm">
+              Password Confirmation:
+            </div>
+            <input type="password" id="passwordConfirmInput" class="formElement" />
+          </label>
+        </div>
+
+        <div class="inputContainer">
+          <label for="countrySelect">
+            <div class="country">
+              Country:
+            </div>
+            <div class="countries">
+              <select id="countrySelect">
+                <option value="default" selected disabled>
+                  Select Country...
+                </option>
+                <option value="MX">
+                  Mexico
+                </option>
+                <option value="FR">
+                  France
+                </option>
+                <option value="NZ">
+                  New Zeland
+                </option>
+              </select>
+            </div>
+          </label>
+        </div>
+
+        <div class="inputContainer">
+          <label for="genderInput">
+            <div class="genderRadio">
+              Gender:
+            </div>
+            <label for="radio1" class="labelGender">
+              Femenine:
+              <input type="radio" id="radioFemenine" name="gender" value="F" />
+            </label>
+
+            <label for="radio1" class="labelGender">
+              Masculine:
+              <input type="radio" id="radioMasculine" name="gender" value="M" />
+            </label>
+          </label>
+        </div>
+
+        <div class="inputContainer">
+          <input class="button" type="submit" id="submitButton" name="Submit" value="Submit"/>
+          <input class="button" type="submit" id="cancelButton" name="Cancel" value="Cancel"/>
+        </div>
+
+        <div class="inputContainer">
+          <p class="errorDisplay" id="errorLabel">
+            Error
+          </p>
+        </div>
+
+      </fieldset>
+    </form>
+  </main>
+<script type="text/javascript" src="./js/index.js"></script>
+</body>
+
+</html>
